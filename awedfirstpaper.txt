@@ -1,0 +1,24 @@
+Los 10 lenguajes de programación más usados actualmente
+Los lenguajes de programación son los que hacen posible que todos los servicios, sitios y entornos digitales que hoy utilizamos, sencillamente puedan funcionar. Por eso existe una gran variedad en cuanto a opciones y elegir en cuáles invertir nuestro tiempo puede no ser tan fácil.
+El tiempo en el que el mundo de la programación informática podía llegar a considerarse como algo exótico o exclusivo ha quedado completamente en el pasado.
+
+Hoy, en la era de los datos, dominar diferentes lenguajes de programación es un aspecto básico en el desarrollo de soluciones de software, sistemas y tecnologías de la información. Además, es simplemente elemental en cuanto a competitividad.
+
+Pero si te interesa estudiar programación o formarte profesionalmente en tecnologías de la información, también es importante utilizar tu tiempo de forma óptima, para lo cual seguro te va a interesar elegir aprender aquellos lenguajes de programación que te abran más puertas en el mercado.
+
+En este sentido, de acuerdo a los resultados de la encuesta Stack Overflow 2021 Developer Survey, de la destacada comunidad de programadores de Stack Overflow y en la que participaron más de 83.000 profesionales de alto rango en el sector a nivel mundial, en la actualidad —y por noveno año consecutivo —, JavaScript es el lenguaje de programación más utilizado en el mundo (el 64,96 %, un 4,74 % menos que en 2020).
+
+Por otra parte, según las cifras de la encuesta, el lenguaje HTML (56,07 %) es el segundo más utilizado en el mundo del desarrollo y la programación. Mientras que, en relación con las cifras del año anterior, Python (48,24 %) intercambió lugares con SQL (47,08 %) para convertirse en el tercer lenguaje de programación más popular del mundo.
+
+Pero veamos el listado completo. A continuación te invitamos a conocer los lenguajes de programación más usados en la actualidad, los de mayor demanda y los de mayor proyección en el mercado.
+
+1. JavaScript
+2. HTML
+3. Python
+4. SQL
+5. Java
+6. C#
+7. NoSQL
+8. Rust
+9. Perl
+10. Swift
