@@ -61,22 +61,31 @@ py llMRAG.py
 #### Primer ejercicio
 
 Usando Python, escriba un programa para enviar mensajes a Chatgpt y recuperar respuestas. El desarrollo de este corresponde al archivo firstProgram.py.
+Para ejecutar el ejercicio debe configurar la variable de entorno os.environ["OPENAI_API_KEY"] = "", o en su defecto reemplazar las comillas por el valor de la llave que obtenga para OpenAI API Key.
 
 ![firstProgram.png](Imagenes%2FfirstProgram.png)
 
 #### Segundo ejercicio
 
 Escriba un RAG simple utilizando una base de datos vectorial en memoria. El desarollo de este corresponde al archivo llmMemoryDatabase.py.
+Para ejecutar el ejercicio debe configurar la variable de entorno os.environ["OPENAI_API_KEY"] = "", o en su defecto reemplazar las comillas por el valor de la llave que obtenga para OpenAI API Key.
 
 ![inmemoryDataBase.png](Imagenes%2FinmemoryDataBase.png)
 
 #### Tercer ejercicio
 
 Escriba un RAG usando Pinecone.El desarrollo de este corresponde al archivo llMRAG.py.
+Para ejecutar el ejercicio debe configurar las variables de entorno os.environ["OPENAI_API_KEY"] = "" y os.environ["PINECONE_API_KEY"] = "", o en su defecto reemplazar las comillas por el valor de la llave que obtenga para OpenAI API Key y el que obtenga en pinecone para PINECONE_API_KEY.
+
+El programa carga documentos de un archivo de texto, que en este caso corresponde a Conocimiento.txt, los procesa, calcula embeddings utilizando un modelo de lenguaje de OpenAI, y luego los indexa en Pinecone para permitir búsquedas de documentos similares basadas en una consulta de búsqueda, que es "What is a gene therapy".
+
+Al ejecutar el programa encontrara la siguiente salida,que incluirá la lista de índices disponibles, así como el contenido del documento que coincide con la consulta de búsqueda
 
 ![llmRag1.png](Imagenes%2FllmRag1.png)
 
 ![llmRag2.png](Imagenes%2FllmRag2.png)
+
+En las siguientes imagenes puede ver los fragmentos extraidos del archivo Conocimiento.txt
 
 ![pinecone1.png](Imagenes%2Fpinecone1.png)
 
