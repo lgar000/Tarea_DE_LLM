@@ -102,7 +102,7 @@ En las siguientes imagenes puede ver los fragmentos extraidos del archivo Conoci
 * [PyCharm](https://www.jetbrains.com/es-es/pycharm/) - PyCharm es un entorno de desarrollo integrado utilizado en programación informática, concretamente para el lenguaje de programación Python.
 * [Pip](https://pypi.org/project/pip/) - Pip es un sistema de gestión de paquetes utilizado para instalar y administrar paquetes de software escritos en Python
 * [OpenAI API Key](https://openai.com/blog/openai-api) - La API de OpenAI (Interfaz de programación de aplicaciones) es una herramienta que permite a los desarrolladores integrar y utilizar los modelos de lenguaje avanzados desarrollados por OpenAI en sus propias aplicaciones, servicios o productos.
-* [Pinecone API Key](https://www.pinecone.io/) - Entorno de desarrollo integrado para el desarrollo de programas informáticos
+* [Pinecone API Key](https://www.pinecone.io/) - Pinecone actúa como una base de datos vectorial, almacenando y recuperando vectores de alta dimensión de manera eficiente. La Pinecone API Key es una clave de autenticación que se utiliza para interactuar con los servicios proporcionados por Pinecone.
 
 ## Autor
 
