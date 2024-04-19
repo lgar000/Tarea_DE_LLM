@@ -9,7 +9,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 
 
 loader = WebBaseLoader(

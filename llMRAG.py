@@ -1,15 +1,16 @@
 from langchain_community.document_loaders import TextLoader
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.vectorstores import Pinecone
+from langchain_pinecone import PineconeVectorStore
+from pinecone import Pinecone, PodSpec
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
-os.environ["PINECONE_API_KEY"] = "99c903d7-9d6a-4725-83a3-7febca27f5f8"
+os.environ["OPENAI_API_KEY"] = ""
+os.environ["PINECONE_API_KEY"] = ""
 os.environ["PINECONE_ENV"] = "gcp-starter"
 
 def loadText():
-    loader = TextLoader("awedfirstpaper.txt")
+    loader = TextLoader("Conocimiento.txt")
     documents = loader.load()
     #text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
 
@@ -27,38 +28,41 @@ def loadText():
 
     import pinecone
 
-    # initialize pinecone
-    pinecone.init(
-        api_key=os.getenv("PINECONE_API_KEY"),  # find at app.pinecone.io
-        environment=os.getenv("PINECONE_ENV"),  # next to api key in console
-    )
 
     index_name = "langchain-demo"
+    pc = Pinecone(api_key='99c903d7-9d6a-4725-83a3-7febca27f5f8')
+
+    print(pc.list_indexes())
 
     # First, check if our index already exists. If it doesn't, we create it
-    if index_name not in pinecone.list_indexes():
+    if len(pc.list_indexes())==0:
         # we create a new index
-        pinecone.create_index(name=index_name, metric="cosine", dimension=1536)
+        #pc.create_index(name=index_name, metric="cosine", dimension=1536)
+        pc.create_index(
+            name=index_name,
+            dimension=1536,
+            metric="cosine",
+            spec=PodSpec(
+                environment="gcp-starter",
+                pod_type="p1.x1",
+                pods=1
+            )
+        )
+
     # The OpenAI embedding model `text-embedding-ada-002 uses 1536 dimensions`
-    # docsearch = Pinecone.from_documents(docs, embeddings, index_name=index_name)
+    docsearch = PineconeVectorStore.from_documents(docs, embeddings, index_name=index_name)
 
 def search():
     embeddings = OpenAIEmbeddings()
-    import pinecone
-
-    # initialize pinecone
-    pinecone.init(
-        api_key=os.getenv("PINECONE_API_KEY"),  # find at app.pinecone.io
-        environment=os.getenv("PINECONE_ENV"),  # next to api key in console
-    )
 
     index_name = "langchain-demo"
     # if you already have an index, you can load it like this
-    docsearch = Pinecone.from_existing_index(index_name, embeddings)
+    docsearch = PineconeVectorStore.from_existing_index(index_name, embeddings)
 
-    query = "What is a distributed pointcut"
+    query = "What is a gene therapy"
     docs = docsearch.similarity_search(query)
 
     print(docs[0].page_content)
 
+loadText()
 search()

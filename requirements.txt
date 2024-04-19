@@ -7,3 +7,5 @@ chromadb
 langchainhub
 bs4
 pinecone-client
+langchain-pinecone
+langchain-community

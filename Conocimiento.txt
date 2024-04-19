@@ -1,0 +1,42 @@
+What is gene therapy?
+Gene therapy is a technique used in an effort to treat or prevent disease. When a gene mutation (a permanent alteration in the DNA sequence) causes a protein to be missing or faulty, gene therapy may be able to restore the normal function of that protein. There are several different approaches to gene therapy:
+
+Introducing a new or modified copy of a gene.
+Turning on or off genes to avoid disease.
+Replacing the disease-causing sequence of a gene with a healthy copy of that sequence.
+Gene editing (see below).
+Base editing (see below).
+The goal of gene therapy is to change the course of disease by targeting its genetic cause.
+
+Understanding genes:
+
+Genes come from our parents. They dictate everything from the color of our eyes to our immune system to our likelihood to develop diseases. Genes contain the information needed to build and maintain cells by encoding proteins.
+
+A gene is a small section of a cell’s DNA, consisting of four chemicals called bases. These bases form the backbone of DNA and — much like a manual — provide instructions for assembling proteins, the building blocks of the human body, such as the muscles, organs and immune system.
+
+The trouble is genes aren’t always built correctly. When this happens, it changes the gene's DNA. This is called a mutation. Mutations can be passed down from someone's parents or can occur for the first time in that person. A mutation in the gene can alter how proteins work. Sometimes, mutations can cause disease. That’s where gene therapy may help.
+
+How does gene therapy work?
+
+Gene Addition:
+Gene addition is used to treat conditions caused by a variation in a single gene.
+This one-time therapy involves the insertion of a functional copy of a missing or faulty gene into a person’s cells by way of a viral or non-viral genetically-engineered vector (delivery vehicle).
+The goal of this therapy is for the new gene to produce a protein the body couldn’t (previously) produce adequately.
+
+Post-Transcriptional Gene Silencing:
+Post-transcriptional gene silencing inactivates specific messenger RNAs (mRNAs) to prevent the expression of a gene.
+The mRNA of a particular gene, which ordinarily would be expressed (turned on), is suppressed (knocked down).
+When the mRNA is knocked down, it no longer creates an active protein at the same level as before the silencing.
+Gene silencing methods are used to combat cancer and other conditions, such as sickle cell disease.
+
+Gene Editing:
+Gene editing is a precise technology used to add, remove or alter specific DNA sections.
+It involves making cuts to DNA at the specific spot where it is malfunctioning.
+After cutting the DNA, the cell naturally repairs itself.
+By disrupting unwanted sequence elements or by copying and pasting in new sequences to fix faulty sequences, gene editing can lead to permanent
+genetic changes. Cells can function normally and reverse disease processes.
+
+Base Editing:
+Base editing targets single point mutations and creates precise changes in genetic code. These changes can silence a disease-causing gene or help activate a specific gene.
+Base editors don't cut double-stranded DNA but instead deliver an additional enzyme to a desired sequence to change the base on one strand.
+Finally, cellular repair proteins recognize the base change and convert it to a permanent mutation. Cells can take on new functions normally, and conditions caused by specific mutations potentially can be cured.

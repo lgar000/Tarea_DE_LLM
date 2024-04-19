@@ -1,10 +1,9 @@
 from langchain.chains import LLMChain
-#from langchain.llms import OpenAI
 from langchain_community.llms import OpenAI
 from langchain.prompts import PromptTemplate
 import os
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 
 
 template = """Question: {question}
