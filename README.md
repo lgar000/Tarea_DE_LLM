@@ -64,6 +64,8 @@ Usando Python, escriba un programa para enviar mensajes a Chatgpt y recuperar re
 
 Para ejecutar el ejercicio debe configurar la variable de entorno os.environ["OPENAI_API_KEY"] = "", o en su defecto reemplazar las comillas por el valor de la llave que obtenga para OpenAI API Key.
 
+En este programa se va a utilizar la biblioteca langchain, primero importamos las clases necesarias: LLMChain para crear una cadena de modelos de lenguaje que genere respuestas, OpenAI para integrar modelos de lenguaje de OpenAI, y PromptTemplate para definir una plantilla para preguntas y respuestas. Luego, configuramos la clave de la API de OpenAI como una variable de entorno. Después, creamos una plantilla para la entrada de preguntas y respuestas, la cual contiene una variable para la pregunta y una respuesta predeterminada. Posteriormente, creamos instancias de la plantilla, el modelo de OpenAI y la cadena de modelos de lenguaje. Definimos una pregunta específica, que es este caso es "What is at the core of Popper's theory of science?" y ejecutamos la cadena de modelos de lenguaje con esa pregunta. Finalmente, imprimimos la respuesta generada que es:
+
 ![firstProgram.png](Imagenes%2FfirstProgram.png)
 
 #### Segundo ejercicio
@@ -71,6 +73,8 @@ Para ejecutar el ejercicio debe configurar la variable de entorno os.environ["OP
 Escriba un RAG simple utilizando una base de datos vectorial en memoria. El desarollo de este corresponde al archivo llmMemoryDatabase.py.
 
 Para ejecutar el ejercicio debe configurar la variable de entorno os.environ["OPENAI_API_KEY"] = "", o en su defecto reemplazar las comillas por el valor de la llave que obtenga para OpenAI API Key.
+
+Este programa se van a cargar documentos para dividirlos en fragmentos más pequeños, calcular vectores de embeddings para esos fragmentos y, finalmente, utilizar un modelo de lenguaje para responder preguntas sobre los documentos. Para esto se importan las bibliotecas necesarias y configura la clave de la API de OpenAI. Luego, crea un objeto WebBaseLoader para cargar documentos web y los divide en fragmentos más pequeños con RecursiveCharacterTextSplitter. Utiliza estos fragmentos para construir un Chroma vectorstore y un retriever para recuperar documentos similares. Además, utiliza RagPrompt para generar respuestas basadas en documentos y un modelo de lenguaje ChatOpenAI para responder preguntas. Finalmente, se formatea la salida y se imprime la respuesta generada para una pregunta específica ("What is Task Decomposition?"), la cual es:
 
 ![inmemoryDataBase.png](Imagenes%2FinmemoryDataBase.png)
 
